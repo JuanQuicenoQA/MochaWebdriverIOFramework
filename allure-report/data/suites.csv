@@ -1,0 +1,5 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"failed","Thu Mar 30 16:15:51 COT 2023","Thu Mar 30 16:15:52 COT 2023","1005","","Login Feature","","","","Successfully Login into the WebApp",""
+"failed","Thu Mar 30 16:15:52 COT 2023","Thu Mar 30 16:15:53 COT 2023","714","","Login Feature","","","","Successfully Login into the WebApp",""
+"passed","Thu Mar 30 16:15:50 COT 2023","Thu Mar 30 16:15:52 COT 2023","2077","","Login Feature","","","","Failed Login into the WebApp",""
+"passed","Thu Mar 30 16:15:49 COT 2023","Thu Mar 30 16:15:51 COT 2023","1636","","Login Feature","","","","Failed Login into the WebApp",""

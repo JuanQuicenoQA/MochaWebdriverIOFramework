@@ -1,0 +1,8 @@
+{
+    "include": [
+      "**/*.js",
+      "**/*.json",
+      "node_modules/@wdio/globals",
+      "node_modules/@wdio/mocha-framework"
+    ]
+}
