@@ -17,6 +17,7 @@ afterEach(async () => {
 
 describe('API Feature', () => {
     it('API Call', async () => {
+        AllureReporter.addStory("Successfully API Call");
         const randomJoke = await browser.call(() => Random.getRandomJoke());
 
         console.log("***** " + randomJoke.data.id);
