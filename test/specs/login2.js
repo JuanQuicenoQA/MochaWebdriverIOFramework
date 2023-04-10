@@ -15,22 +15,11 @@ after(async () => {
 afterEach(async () => {
 });
 
-describe('Login Feature', () => {
-    it('Failed Login into the WebApp', async () => {
-        await LoginPage.validInputUsername;
-        await LoginPage.notValidPassword;
-        await LoginPage.clickBtnSubmit;
+describe('API Feature', () => {
+    it('API Call', async () => {
+        const randomJoke = await browser.call(() => Random.getRandomJoke());
 
-        const errorTxt = await LoginPage.loginErrorMessage.getText();
-        await expect(errorTxt).toEqual("Epic sadface: Username and password do not match any user in this service");
-    });
-
-    it('Successfully Login into the WebApp', async () => {
-        await LoginPage.validInputUsername;
-        await LoginPage.validPassword;
-        await LoginPage.clickBtnSubmit;
-
-        const productsTitle = await ProductPage.productPageTitle.getText();
-        await expect(productsTitle).toEqual("Products");
+        console.log("***** " + randomJoke.data.id);
+        console.log("***** " + randomJoke.data.value);
     });
 });
