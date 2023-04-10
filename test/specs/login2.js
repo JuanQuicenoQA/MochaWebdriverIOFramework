@@ -1,5 +1,5 @@
 import LoginPage from '../page-objects/login-page';
-import ProductPage from '../page-objects/product-page';
+import Random from '../utils/api-calls';
 
 before(async () => {
 });
