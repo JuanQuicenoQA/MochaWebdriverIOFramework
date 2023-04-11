@@ -23,8 +23,11 @@ describe('API Feature', () => {
         const newPet = await browser.call(() => Random.postNewPet());
 
         console.log("***** Id Joke " + randomJoke.data.id);
-        console.log("***** Value Joke" + randomJoke.data.value);
+        console.log("***** Value Joke " + randomJoke.data.value);
+        console.log("***** Status Code " + newPet.status);
         console.log("***** Id Pet " + newPet.data.id);
         console.log("***** Name Pet " + newPet.data.name);
+
+        await expect(newPet.status).toEqual(200);
     });
 });
