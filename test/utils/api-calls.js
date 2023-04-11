@@ -16,7 +16,6 @@ class RandomAPI{
             }
         }
     );
-
         return response;
     }
 }
